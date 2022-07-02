@@ -22,12 +22,13 @@ int main(){
     for (int i=0 ; i < N  ;i++){
         cin >> ch2.at(i);
     }
-    int dif = 0 ;
+    long long dif = 0 ;
     vector<string>ch(N);
 
     for (int i=0 ; i < N  ;i++){
         ch.at(i) = ch2.at(i);
     }
+
     for (int i = 0 ; i < Q ; i++){
         int tmp;
         cin >> tmp;
@@ -45,8 +46,6 @@ int main(){
 //
 //            }
 
-
-
         }
 
         if (tmp == 2){
@@ -55,11 +54,10 @@ int main(){
             cin>> tmp2;
 //            if (tmp2-1-lastdif < 0)
 //            {
-//                cout << ch.at(N-1-(100*N+tmp2-1-lastdif)%N) << "\n";
+//                cout << ch.at(N-1-(+tmp2-1-lastdif)%N) << "\n";
 //                break;
 //            }
             cout << ch.at((tmp2-1-lastdif + N)%N) << endl;
-
         }
     }
 
