@@ -21,11 +21,7 @@ int main(){
     int H , M ;
     H = K/60;
     M = K%60;
-
     printf("%2d:%02d", 21+H , 00+M );
-
-
-
     return 0;
 }
 

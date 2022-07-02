@@ -22,10 +22,7 @@ int main(){
     for (int i=0 ; i < N  ;i++){
         cin >> ch2.at(i);
     }
-
-    int dif ;
-
-
+    int dif = 0 ;
     vector<string>ch(N);
 
     for (int i=0 ; i < N  ;i++){
@@ -34,9 +31,8 @@ int main(){
     for (int i = 0 ; i < Q ; i++){
         int tmp;
         cin >> tmp;
-
+        int tmp2;
         if (tmp == 1){
-            int tmp2;
             cin >> tmp2;
             dif += tmp2;
 //            for (int j = 0; j < tmp2; ++j) {
@@ -54,17 +50,15 @@ int main(){
         }
 
         if (tmp == 2){
-            int tmp2;
             int lastdif;
-            lastdif = dif % N;
+            lastdif = (N+dif) % N;
             cin>> tmp2;
-            if (tmp2-1-lastdif < 0)
-            {
-                lastdif = fabs(tmp2-1-lastdif);
-                cout << ch.at(tmp2-1+lastdif) << "\n";
-                break;
-            }
-            cout << ch.at(tmp2-1-lastdif) << "\n";
+//            if (tmp2-1-lastdif < 0)
+//            {
+//                cout << ch.at(N-1-(100*N+tmp2-1-lastdif)%N) << "\n";
+//                break;
+//            }
+            cout << ch.at((tmp2-1-lastdif + N)%N) << endl;
 
         }
     }
