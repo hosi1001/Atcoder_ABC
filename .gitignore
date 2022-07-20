@@ -31,6 +31,8 @@
 *.out
 *.app
 
+*.vscode
+
 # local
 .idea/
 cmake-build-debug/
