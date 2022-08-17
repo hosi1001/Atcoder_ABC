@@ -45,7 +45,11 @@ int main(){
         } }
 
         // printf("flag3\n");
+<<<<<<< HEAD
         A.at(tmp) = A.at(tmp) +1 ;
+=======
+        A.at(tmp) = A.at(tmp) +1 ;  
+>>>>>>> origin/master
     // for (int i = 0 ; i < K ; i++){
     // printf("%d " , A.at(i));
     // }
@@ -60,7 +64,10 @@ int main(){
 
 
 }
+<<<<<<< HEAD
 
 //
 // Created by hosi1 on 2022/06/26.
 //
+=======
+>>>>>>> origin/master
